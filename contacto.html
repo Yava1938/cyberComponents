@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Contactanos</title>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" alt="logo" class="logo">
+        <nav>
+            <a href="index.html" aria-label="Ir a Pagina principal">Inicio</a>
+            <a href="productos.html" aria-label="Ir a Pagina de productos">Productos</a>~
+            <a href="contacto.html" aria-label="Ir a Pagina de contacto">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <h1 style="text-align: center;">Compartenos tus datos para recibir atenci&oacute;n personalizada!</h1>
+        </aside>
+        <section aria-labelledby="form-title">
+            <article class="formulario">
+                <form>
+                    <fieldset>
+                        <legend id="form-title">Información de usuario</legend>
+                        <div>
+                            <label for="nombre" id="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="John Doe" required aria-required="true" aria-describedby="nombre-help">
+                            <p id="nombre-help" class="help-text">Por favor, ingrese su nombre completo.</p>
+                        </div>
+                        <div>
+                            <label for="email">Correo Electronico</label>
+                            <input type="email" name="email" id="email" placeholder="Doe@example.com" required aria-required="true" aria-describedby="email-help">
+                            <p class="help-text" id="email-help">Por favor, ingrese su correo electronico.</p>
+                        </div>
+                        <div>
+                            <label for="servicio">Servicio</label>
+                            <select name="servicio" id="servicio" required aria-required="true">
+                                <option value="">Seleccione un servicio</option>
+                                <option value="consulta">Consulta</option>
+                                <option value="soporte">Soporte Técnico</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="comentario">Comentarios</label>
+                            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Escribe tus comentarios aqui..." aria-describedby="comentario-help" required aria-required="true"></textarea>
+                            <p class="comentario-help" id="help-text">Propocione sus comentarios.</p>
+                        </div>
+                        <input type="submit" value="Enviar" id="btnEnviar">
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
